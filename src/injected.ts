@@ -8,6 +8,10 @@
  * tabs easily
  */
 
-console.log("Injected script");
+import init from "./modules/messagesPOC/forContentScript";
+
+console.log("Injected script2");
+
+init();
 
 export {};

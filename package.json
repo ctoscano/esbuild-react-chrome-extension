@@ -1,16 +1,20 @@
 {
   "scripts": {
     "build": "NODE_ENV=\"production\" node esbuild.js",
+    "dev": "node esbuild.js && echo 'reload in chrome: chrome://extensions/'",
     "fmt": "prettier --write .",
     "fmt:check": "prettier --check ."
   },
   "gitHooks": {
     "pre-commit": "prettier --write . && git add -A"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@types/chrome": "^0.0.129",
+    "@types/lodash": "^4.14.191",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "esbuild": "^0.8.46",

@@ -9,7 +9,7 @@ esbuild
       "./src/injected.ts"
     ],
     bundle: true,
-    minify: true,
+    minify: process.env.NODE_ENV === "production",
     sourcemap: process.env.NODE_ENV !== "production",
     target: ["chrome58", "firefox57"],
     outdir: "./public/build",

@@ -8,6 +8,10 @@
  * https://developer.chrome.com/docs/extensions/mv2/background_pages/
  */
 
+import init from "./modules/messagesPOC/forBackgroundScript";
+
 console.log("background script");
+
+init();
 
 export {};
